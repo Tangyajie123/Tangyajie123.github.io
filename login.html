@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        html,
+        body {
+            background-image: url("images/background-color.jpg");
+            margin: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: #F8FFFA;
+            padding: 0px 100px;
+            width: 30%;
+            height: 100%;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .container_logo {
+            display: flex;
+            flex-direction: row;
+            padding: 16px 0;
+            font-family: 'Poller One';
+            line-height: 100%;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .input_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 0px;
+        }
+
+        input {
+            border: 1.5px solid #EBEAED;
+            padding: 16px 16px;
+            border-radius: 10px;
+            background-color: #F8FFFA;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input:focus {
+            caret-color: #38AB55;
+            border: 2px solid #38AB55;
+            outline: 0cm;
+            color: #81f69e;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 20px 20px;
+            background-color: #38AB55;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-weight: 600;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text_info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 0px;
+            gap: 4px;
+            color: #84818A;
+            width: 100%;
+        }
+
+        .bl {
+            justify-content: flex-start;
+        }
+
+        .br {
+            flex: 1;
+            justify-content: flex-end;
+            display: flex;
+        }
+
+        .br a {
+            color: #84818A;
+            text-decoration: none;
+        }
+
+        .br a:hover {
+            color: #38AB55;
+            text-decoration: underline;
+        }
+
+        .bl:hover {
+            color: #38AB55;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_logo"
+            style="font-size: 24px;color: #38AB55;font-family: poller system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-weight: bolder;">
+            <img src="images/logo.jpg" width="64px" height="64px"><img src="images/sakarori.png" height="32px">
+        </div>
+        <div style="font-size: 32px;font-weight: bolder;font-family: NotoSansJP;">
+            お疲れ様です!
+        </div>
+        <div class="input_info">
+            <input type="text" name="email" id="email" placeholder="メールアドレスを入力してください">
+            <input type="text" name="password" id="password" placeholder="パスワードを入力してください">
+        </div>
+        <div class="text_info">
+            <span class="bl"><input type="radio" name="remember" id="remember">パスワードを保存</span>
+            <span class="br"><a href="/forgetPassword.html">パスワードを忘れ？</a></span>
+        </div>
+        <button type="submit" id="login">ログイン</button>
+    </div>
+    <script>
+
+    </script>
+</body>
+
+</html>
